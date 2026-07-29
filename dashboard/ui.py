@@ -79,7 +79,7 @@ class DashboardInput():
 
     def properties(self, col2):
         """
-        Lets users input their properties.
+        Input condition ofthe combusiton, please be noted that p and t would not affect the output CF
         :param col2:
         :return:
         """
@@ -125,7 +125,7 @@ class Calculations():
 
     def lhv_calculation(self, pct):
         """
-        Add here
+        LHV calculation, = HHV - latent heat of vaporization
         :param pct:
         :return:
         """
@@ -145,7 +145,7 @@ class Calculations():
 
     def stochiometric_calculation(self, pct, pct_o2):
         """
-        Add here.
+        volume of dry flue gas calculaiton, Z value calculation from BS EN 6976
         :param pct:
         :param pct_O2:
         :return:
@@ -235,7 +235,7 @@ class Output():
 
     def properties(self, cf, total_lhv):
         """
-        add info here
+        output UI
         :param cf:
         :param total_lhv:
         :return:
