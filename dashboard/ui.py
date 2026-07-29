@@ -23,11 +23,12 @@ class DashboardInput():
         This is the title of the dashboard.
         :return:
         """
-        st.set_page_config(page_title="Fuel Correction Factor Calculator")
+        st.set_page_config(page_title="Conversion Factors Calculator")
+        st.title("Conversion Factors Calculator")
         st.markdown(
-            "This tool is developed to understand fuel correction factors"
-            "Fuel correction factor are a concentration-based emission factor used for emission report"
-            " It should be noted that fuel corrections factors or ELV after multiplying FCF does not necessarily means the ELV of the fuel but a reference guidance for ELV in environmental regulations. "
+            "This tool is developed to understand conversion factor (CF)"
+            "CF is a dimensionless multiplier that adjusts concentration-based emissions reporting to account for differences in fuel composition and thermal energy output between fuels."
+            "It should be noted that conversion factors or ELV after multiplying FCF does not necessarily means the ELV of the fuel but a reference guidance for ELV in environmental regulations. "
         )
         st.subheader("Fuel composition (mol %)")
         col1, col2 = st.columns(2, gap="small")
@@ -64,7 +65,7 @@ class DashboardInput():
 
             if total <= 0:
                 st.warning(
-                    "Enter at least one co\mponent before calculating."
+                    "Enter at least one component before calculating."
                 )
                 composition_valid = False
             else:
