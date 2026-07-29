@@ -1,0 +1,10 @@
+databricks-sdk
+databricks-sql-connector
+streamlit
+pandas
+tqdm
+numpy
+scipy
+matplotlib
+seaborn
+cantera
